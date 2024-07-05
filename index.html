@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Website With Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[url('/Users/elcanbag/Documents/testtailwind/images/Image.png')] bg-center bg-cover min-h-screen">
+    <div class="min-h-screen flex flex-col justify-between bg-[url('images/Image.png')] bg-center bg-cover p-5 lg:p-20 relative">
+        <nav class="flex items-center justify-between">
+            <img src="images/logo.png" class="w-20 lg:w-40 cursor-pointer">
+            <ul class="hidden lg:flex text-center space-x-5">
+                <li><a href="#" class="no-underline text-white px-2">Home</a></li>
+                <li><a href="#" class="no-underline text-white px-2">About</a></li>
+                <li><a href="#" class="no-underline text-white px-2">Features</a></li>
+                <li><a href="#" class="no-underline text-white px-2">Contact</a></li>
+            </ul>
+            <img src="images/cart.png" class="w-6 lg:w-8 cursor-pointer">
+        </nav>
+
+        <div class="flex-grow flex flex-col lg:flex-row justify-center items-center lg:justify-between lg:items-start">
+            <div class="text-white max-w-lg text-center lg:text-left"><br><br><br><br>
+                <h1 class="text-4xl lg:text-6xl font-semibold leading-normal">Groceries <br> delivery in <span class="font-light">15 mins</span></h1>
+                <p class="mt-4 lg:mt-6">Grocify offers a wide range of products, including fresh products, meats, dairy, baked goods and non-perishable items.</p>
+                <div class="mt-10 flex flex-col lg:flex-row">
+                    <a href="#" class="bg-yellow-300 rounded-3xl py-3 px-8 font-medium inline-block mb-4 lg:mb-0 lg:mr-4 hover:bg-transparent hover:border-yellow-300 hover:text-white duration-300 hover:border border-transparent">Order Now</a>
+                    <a href="#" class="text-yellow-300">Download App <span class="text-lg inline-block rotate-90">&#10148;</span></a>
+                </div>
+            </div>
+            <img src="images/grocery-image.png" class="w-full lg:w-1/2 mt-10 lg:mt-0 lg:absolute bottom-0 right-20">
+        </div>
+    </div>
+</body>
+</html>
